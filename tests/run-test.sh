@@ -1,12 +1,5 @@
 #!/bin/bash
 
-#pushd ..
-#vagrant up
-#./pastec.sh &
-#sleep 30
-
-#popd
-
 # clear previous test results if any
 rm actual.json
 
@@ -20,12 +13,7 @@ curl -X POST --data-binary @$image http://localhost:4212/index/searcher > actual
 
 curl -X POST -d '{"type":"CLEAR"}' http://localhost:4212/index/io
 
-pushd ..
-#vagrant halt
-popd
-
 result=`diff actual.json expected.json`
-
 
 if [ -n "$result" ]; then
     exit 1

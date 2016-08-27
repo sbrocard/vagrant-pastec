@@ -13,6 +13,8 @@ cd tests
 
 ./run-test.sh
 
+vagrant halt
+
 if [ $? -eq 0 ]
 then
   echo "Test Successfully"
