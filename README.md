@@ -24,6 +24,10 @@ Then, run Pastec serveur
 
     ./pastec.sh
 or
+
     pastec.bat
+or
+
+    vagrant ssh -c "pastec /pastec/visualWordsORB.dat"
     
 Then pastec server can be used as described in the [Pastec documentation](http://pastec.io/doc/oss/)
