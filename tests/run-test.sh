@@ -12,13 +12,13 @@ rm actual.json
 
 
 curl -X DELETE http://localhost:4212/index/images/1
-image=logovisualink.png
+image=mona-lisa.jpg
 curl -X PUT --data-binary @$image http://localhost:4212/index/images/1
 
 curl -X POST --data-binary @$image http://localhost:4212/index/searcher > actual.json
 
 
-curl -X POST -d '{"type":"CLEAR"}' http://localhos:4212/index/io
+curl -X POST -d '{"type":"CLEAR"}' http://localhost:4212/index/io
 
 pushd ..
 #vagrant halt

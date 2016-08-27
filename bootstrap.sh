@@ -18,4 +18,3 @@ buildDeps='curl cmake git make gcc g++ ca-certificates';
     && rm -rf /var/lib/apt/lists/* \
 && apt-get purge -y --auto-remove $buildDeps
 
-cp /vagrant/entrypoint.sh /entrypoint.sh

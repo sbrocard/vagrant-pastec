@@ -1,1 +1,1 @@
-vagrant ssh -c "source /entrypoint.sh pastec"
+vagrant ssh -c "pastec /pastec/visualWordsORB.dat"
