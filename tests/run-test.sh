@@ -1,9 +1,11 @@
-pushd ..
+#!/bin/bash
+
+#pushd ..
 #vagrant up
 #./pastec.sh &
-sleep 30
+#sleep 30
 
-popd
+#popd
 
 # clear previous test results if any
 rm actual.json
