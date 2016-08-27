@@ -5,8 +5,8 @@ vagrant up
 echo starting pastec
 nohup vagrant ssh -c "pastec /pastec/visualWordsORB.dat" &
 
-echo waiting 30s
-sleep 30
+echo waiting 50s
+sleep 50
 
 echo starting test
 cd tests
